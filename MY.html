@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的项目</title>
+    <style type="text/css">
+        #father{
+            background: #eee;
+            margin: 20px;
+            padding: 20px;
+            height: auto;
+            border: 1px solid #999;
+            overflow: hidden;
+            /*clear: inherit;*/
+        }
+        #left{
+            width: 160px;
+            border: 1px solid #999;
+            padding: 20px;
+            background: #fff;
+            height: 100px;
+            float: left;
+            /*overflow: hidden;*/
+        }
+            .text{
+
+                position: absolute;
+                top: 80px;
+                left: 180px;
+            }
+        #main{
+            width: auto;
+            border: 1px solid #999;
+            padding: 20px;
+            background: #fff;
+            /*height: auto;
+            /*position: absolute;*/
+            /*float: inherit;*/
+            margin-left: 220px;
+            margin-right: 180px;
+            margin-top: 0px;
+        }
+        #right{
+            width: 120px;
+            border: 1px solid #999;
+            padding: 20px;
+            background: #fff;
+            /*float: right;
+            /*position: fixed;*/
+            right: 50px;
+            top: 40px;
+            position: absolute;
+            /*overflow: inherit;
+            /*margin-top: -100%;*/
+        }
+        #advertisement
+        {
+            border: 1px solid #888;
+            position: fixed;
+            width: 500px;
+            height: 200px;
+            left: 25px;
+            bottom: 30px;
+            font-family: 华文楷体;
+            font-size: 50px;
+            /*font: "华文宋体" 30px;*/
+        }
+        .left_2
+        {
+            width: 160px;
+            border: 1px solid #888;
+            padding: 20px;
+            background: #999;
+            height: 200px;
+            float: left;
+
+        }
+    </style>
+    <script type="text/javascript">
+        //var E=0;
+        var mainHeight=document.getElementById("main");
+        var rightHeight=document.getElementById("right");
+        var leftHeight=document.getElementById("left");
+        if(rightHeight>mainHeight||rightHeight>leftHeight)
+        {
+            document.getElementById("father").style.height=rightHeight+40;
+        }
+        function A()
+        {
+            var mainHeight=document.getElementById("main");
+            var rightHeight=document.getElementById("right");
+            var leftHeight=document.getElementById("left");
+            //E++;
+            //var B=E%2;
+            if(rightHeight.style.background != "#fff")
+            {
+                mainHeight.style.height = "500px";
+                rightHeight.style.background = "#888888";
+                rightHeight.className = "left_2";
+            }
+            else
+            {
+                mainHeight.style.height = auto;
+                rightHeight.style.background = "#fff";
+            }
+        }
+        function B()
+        {
+            var confirmn = confirm("确认隐藏？？？");
+            if (confirmn = true)
+            {
+                var advertisement = document.getElementById("advertisement");
+                advertisement.style.display = "none";
+                alert(advertisement);
+                alert(advertisement.innerHTML);
+            }
+        }
+        function C()
+        {
+            var advertisement=document.getElementById("advertisement");
+            advertisement.style.display="block";
+        }
+        function D()
+        {
+            var p1=document.getElementById("right");
+            p1.removeAttribute("style");
+            p1.className="left_2";
+        }
+    </script>
+</head>
+<body>
+    <div id="father">
+        <div id="left">
+            <div>
+                <img src="D:\Users\岩\Pictures\Saved Pictures\Magic Puzzles. 2016-14-28 13-14-05.jpg" width="80px" height="80px">
+            </div>
+            <div class="text">
+                沈理前端沈理前端
+            </div>
+
+        </div>
+        <div id="main">
+            关于团队的介绍关于团队的介绍关于团队的介绍关于团队于团队的介绍关于团队的介绍关于团队的介绍关于团队于团队的介绍关于团队的介绍关于团队的介绍关于团队于团队
+            <br>
+            <input style="margin: 5px" type="button" value="点点看" onclick="A()"/><br>
+            <input style="margin: 5px" type="button" value="隐藏广告" onclick="B()"><br>
+            <input style="margin: 5px" type="button" value="显示广告" onclick="C()"><br>
+            <input style="margin: 5px" type="button" value="点点看" onclick="D()">
+        </div>
+        <div id="right">
+            right关于团队的介绍关于团队于团队的介绍关于
+        </div>
+    </div>
+    <div class="left_2" id="advertisement">
+    这是一个广告
+    </div>
+</body>
+</html>

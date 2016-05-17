@@ -1,0 +1,171 @@
+body::-webkit-scrollbar {/*滚动条设置  滚动条整体部分*/
+    width: 5px;/*滚动条宽度*/
+}
+
+body::-webkit-scrollbar-track {/*滚动条的轨道*/
+    background-color: #0897C7;
+    border-radius: 2em;/*定义圆角*/
+}
+
+body::-webkit-scrollbar-thumb {/*滚动条里面的小方块，能向上向下移动*/
+    background-color: #ff4400;
+    border-radius: 2em;/*定义圆角*/
+}
+
+#all {
+    position: relative;
+    top: 0px;
+    width: 1000px;
+    height: 700px;
+    /*background-color: #73A4C6;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#head {
+    position: fixed;
+    background-color: #565755;
+    width: 1000px;
+    height: 90px;
+    z-index: 1000;
+    top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sider {
+    /*position: fixed;
+    overflow-y:scroll;
+    height: 580px;
+    width: 330px;
+    top: 98px;
+    left: 840px;
+    z-index: 1000;
+    background-color: #69E40F;
+    transition: top 1s;*/
+    position: absolute;
+    overflow-y: scroll;
+    height: 545px;
+    width: 330px;
+    top: 1px;
+    left: 670px;
+    z-index: 1000;
+    background-color: #69E40F;
+    transition: top 0.8s;
+}
+
+#body {
+    position: relative;
+    width: 645px;
+    height: 730px;
+    top: 90px;
+    padding: 5px;
+    background-color: #48BDF7;
+}
+
+#footer {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    top: 80px;
+    background-color: #F7F943;
+    /*z-index: 1000;*/
+    text-align: center;
+}
+
+#foot_text {
+    line-height: 50px;
+}
+
+/*导航栏样式*/
+.header {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.img {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    border-radius: 10px;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+}
+
+.img:hover {
+    opacity: 0.9;
+    width: 110px;
+    height: 110px;
+    transform: rotate(360deg);
+}
+
+#tongzhi {
+    width: 550px;
+    left: 180px;
+}
+
+#regist {
+    left: 908px;
+}
+
+/*正文样式*/
+.main {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #4A4949;
+}
+
+.pagination {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+}
+
+.page {
+    display: inline-block;
+    padding: 2px 9px;
+    margin-right: 4px;
+    border-radius: 3px;
+    background: #D6D1D6;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px #fff;
+    cursor: pointer;
+}
+
+.page:hover {
+    background-color: #fff;
+}
+
+#sider::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sider::-webkit-scrollbar-track {
+    background-color: #808080;
+    border-radius: 2em;
+}
+
+#sider::-webkit-scrollbar-thumb {
+    background-color: #ff4400;
+    border-radius: 2em;
+}
+
+#belong {
+    position: relative;
+    /*top: 90px;
+    left: 165px;*/
+    height: 80px;
+    width: 300px;
+    z-index: 100;
+    margin: 10px;
+    background-color: #F8EC07;
+}

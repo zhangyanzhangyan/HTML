@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lab.css">
+	<link rel="stylesheet" type="text/css" href="user.css">
+	<link rel="stylesheet" type="text/css" href="program.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	
+	<script type="text/javascript" src="jquery-1.12.3.js"></script>
+	<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	<!--script type="text/javascript" src="lab.js" defer="defer"></script-->
+</head>
+<body>
+	<div id="all">
+		<div id="head" class="header">
+			<div id="home" class="header">
+				<img src="image/home.jpg" class="img">
+			</div>
+			<div id="tongzhi" class="header">
+				<div  id="roll" class="header">
+					<div  id="rollTitle">动力车间<a href="#" target="_self">更多>></a> </div>
+					<div  id="rollBox">
+						<ul>
+							<li><a class="informationText">1.消息1</a><span class="informationTime">2016-05-08</span></li>
+							<li><a class="informationText">2.消息22.消息22.消息22.消息22.消息22.消息22.消息2</a><span class="informationTime">2016-05-08</span></li>
+							<li><a class="informationText">3.消息3</a><span class="informationTime">2016-05-08</span></li>
+							<li><a class="informationText">4.消息4</a><span class="informationTime">2016-05-08</span></li>
+							<li><a class="informationText">5.消息5</a><span class="informationTime">2016-05-08</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="regist" class="header">
+				<a href="javascript:openLogin();"><img src="image/register.jpg" class="img" id="img_regist"></a>
+				<div id="login" >
+					<form method="post"action="login.php">
+						<a href="javascript:closeLogin();"><img src="image/close.png" id="img_close" title="关闭" /></a>
+						<ul>
+							<li>
+								<label for="username">用户名：</label>
+								<input type="text" name="username" id="username" required placeholder="请输入你的用户名"/>
+								<p id="txtHint1"></p>
+							</li>
+							<li>
+								<label for="pwd">密码：</label>
+								<input type="password" name="pwd" id="pwd" required placeholder="请输入你的密码"/>
+								<p id="txtHint2"></p>
+							</li>
+							<li>
+								<input type="checkbox" name="remember" id="remember" title="记住密码"/>
+								<label for="remember" clas="rem">记住密码</label>
+								<a href="#" class="forget">忘记密码？</a>
+							</li>
+							<li>
+								<button id="submit" onclick="showHint(this.value)">登录</button>
+								<a href="#">点击注册</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="body">
+			<div class="doc">
+				<div class="main"></div>
+				<div class="main"></div>
+				<div class="main"></div>
+				<div class="main"></div>
+				<div class="main"></div>
+				<div class="main"></div>
+
+				<div class="pagination">
+					<a href='index.php' class="page">first</a>&nbsp;
+					<span id="page_active" class="page">...</span>&nbsp;
+					<a href="#" class="page">last</a><a class="page">last</a>&nbsp;
+					<a href="#" class="page">上一页</a><a href="#" class="page">下一页</a>
+				</div>
+			</div>
+			<div id="sider">
+				<div id="belong">
+					<input type="radio" class="select" checked="checked" id="check_all" /><label class="belong" for="check_all">全部</label>
+					<input type="checkbox" class="select" id="check_fount" /><label class="belong" for="check_fount">前端</label>
+					<input type="checkbox" class="select" id="check_back" /><label class="belong" for="check_back">后端</label>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+				<p id="foot_text">&copy 李涛</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="program.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.father
+{
+    border:1px solid #999;
+    padding: 6px;/*边框内间距*/
+    margin-right: auto;
+    margin-left:auto;
+    margin-top:auto;
+    background: red;
+    width: 600px;
+    height: 110px;
+    overflow: hidden;/*超出div的内容隐藏*/
+    position: relative;
+}
+.page
+{
+    border: 1px solid #565755;
+    background:#66FF66;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    height: 88px;
+    width: auto;
+}
+.title
+{
+    border: 1px solid #565755;
+    width: auto;
+    font-family: 华文行楷, fantasy;
+}
+.text
+{
+    border: 1px solid #565755;
+    text-indent: each-line;
+    margin-left: 5px;
+    width: 30%;
+}
+.time
+{
+    border: 1px solid #565755;
+    margin-bottom: 0px;
+    width: 40%;
+    margin-right: 0px;
+    top: 0px;
+    text-align: right;
+    /*margin-bottom: auto;
+    position: relative;
+    margin-right: auto;*/
+}
+#div1
+{
+    top: 5px;
+}
+#div2
+{
+    top: 150px;
+}
+#div3
+{
+    top: 300px;
+}
+li
+{
+    list-style: none;/*移除标签的某一属性*/
+}

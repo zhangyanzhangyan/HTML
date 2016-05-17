@@ -1,0 +1,26 @@
+.father{
+    border: 1px solid red;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page{
+    border: 1px solid #565755;
+    height: 80px;
+}
+.title{
+    border: 1px solid #66FF66;
+
+}
+.text{
+    border: 1px solid #66FF66;
+
+}
+.time{
+    border: 1px solid #66FF66;
+    width: auto;
+
+}

@@ -1,0 +1,15 @@
+canvas {
+	display: block;
+	margin: 50px auto;
+	box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
+}
+button{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 1000px;
+	top: 10px;
+	background-color: #043EC2;
+	font-size: 40px;
+}
+button:hover{color: #FFF;}

@@ -1,0 +1,88 @@
+/*body {
+    font-size: 12px;
+    line-height: 24px;
+    text-algin: center;        /* 页面内容居中
+}*
+* {
+    margin: 0px;
+    padding: 0px;            /*  去掉所有标签的marign和padding的值  *
+}*/
+ul {
+    list-style: none;           /*  去掉ul标签默认的点样式  */
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: #333;
+    text-decoration: none;     /* 超链接样式 */
+}
+a:hover {                     /*鼠标放上时的效果*/
+    color: #FF0000;
+    font-size: 20px;
+}
+#roll {
+    width: 599px;
+    border: 0px solid #ababab;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px #ababab;
+    margin: 0px auto 0;
+    text-align: left;               /* 让新闻内容靠左 */
+    padding: 0px 0px 1px 0px;
+}
+/*  头部样式 */
+#rollTitle {
+    height: 20px;
+    overflow: hidden;  /* 内容超出的部分要隐藏，免得撑高头部 */
+    font-size: 13px;
+    line-height: normal;/*行高*/
+    padding-left: 30px;
+    background-image: -moz-linear-gradient(top, #f05e6f, #c9394a); /* Firefox */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a)); /* Saf4+, Chrome */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fa1ff', endColorstr='#f05e6f', GradientType=0); /* IE*/
+    border: 1px solid #f05e6f;
+    -moz-border-radius: 8px 8px 0 0;      /* 设置圆角 */
+    -webkit-border-radius: 8px 8px 0 0;   /* 设置圆角 */
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    position: relative;
+}
+#rollTitle a {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: inline;
+    color: #fff;
+    font-size: 10px;
+    line-height: normal;/*行高*/
+}
+/*  底部样式 */
+#rollBot {
+    width: 399px;
+    height: 10px;
+    overflow: hidden;     /* 内容超出的部分要隐藏，免得撑高底部结构 */
+}
+/*  中间样式 */
+#rollBox {
+    height: 48px;
+    width: 535px;
+    margin-left: 25px;
+    margin-top: 10px;
+    overflow: hidden;    /* 超出的内容部分要隐藏，免得撑高中间部分 */
+}
+#roll ul li {
+    height: 24px;
+}
+#roll ul li a {
+    width: 450px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-indent: 15px;
+    height: 24px;
+}
+#roll ul li span {
+    float: right;
+    color: #999;
+}

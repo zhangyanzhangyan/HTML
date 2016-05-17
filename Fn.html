@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+    </style>
+
+    <script type="text/javascript">
+        function Fn(n)
+        {
+            var B = n;
+            var sum;
+            sum = 2;
+            if (B == 1 || B == 2)
+            {
+                return sum;
+            }
+            else
+            {
+                sum = Fn(B-1)+Fn(B-2);
+            }
+        }
+        function A()
+        {
+            var sum = Fn(25);
+            alert(sum);
+        }
+    </script>
+</head>
+<body>
+<input style="margin: 5px" type="button" value="点点看" onclick="A(25)"/><br>
+
+</body>
+</html>
